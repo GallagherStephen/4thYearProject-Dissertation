@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins' , sans-serif;
+}
+
+button{
+    font-family: 'Poppins' , sans-serif;
+}
+
+header{
+    display: flex ;
+    width:100%;
+}
+
+.logo-container,.nav-links,.cart{
+    display: flex;
+}
+
+.logo{
+    font-weight: 400;
+    margin:5px;
+}
+.logo-container{
+    flex: 1;
+}
+
+nav{
+    flex: 1;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    flex: 1;
+    color: gray;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation{
+    display:flex;
+    width:90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+   
+}
+
+.introduction{
+    flex:0.5; 
+}
+
+.intro-text h1 {
+font-size: 40px;
+font-weight:  500;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+}
+
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select{
+    border: 2px solid pink;
+    background: transparent;
+    color: pink;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-add{
+    border: none;
+    background: pink;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cover{
+    flex: 1;
+    display:flex;
+    height: 60vh;
+    justify-content: center;
+}
+.cover img{
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+
+.backgroundImage{
+    position: absolute;
+    top: 0px;
+    height: 150%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+@keyframes drop{
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .presentation {
+        flex-direction: column;
+    }
+    .introduction{
+        margin-top:5vh;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p {
+        font-size: 18px;
+    }
+    .cta{
+        padding: 10px 0px 0px 0px;
+    }
+    .cover img {
+        height: 60%;
+    }
+}
