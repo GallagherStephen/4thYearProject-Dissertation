@@ -1,6 +1,6 @@
 # 4thYearProject-Dissertation
 
-## Supervisor Mark Cambell 
+## Supervisor Mark Campbell 
 
 ### Jack Haugh G003359747
 ### Kevin Flanagan G00228079
