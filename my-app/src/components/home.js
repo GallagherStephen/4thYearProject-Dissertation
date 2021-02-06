@@ -5,9 +5,33 @@ class Home extends React.Component{
 
   render(){
     return(
-      <div>
-        <h1>Home Page for Website</h1>
-      </div> 
+
+<body>
+
+  <main>
+
+        <section class="presentation">
+
+                  <div class = "introduction">
+                      <div class = "intro-text">
+                      <h1>Aplication for the Future</h1>
+                      <p>
+                        Welcome to Student-Mania the worlds best student application
+                      </p>
+                  </div>
+
+                  <div class="cta">
+                      <button class ="cta-select" >Features</button>
+                      <button class ="cta-add" >Download</button>
+                  </div>
+                  
+              </div>
+
+              
+      </section>
+  </main>
+
+</body>
     )
   }
 }

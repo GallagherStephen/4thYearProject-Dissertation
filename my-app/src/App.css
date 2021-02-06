@@ -41,3 +41,58 @@
 }
 
 
+
+
+
+button{
+  font-family: 'Poppins' , sans-serif;
+}
+
+.introduction{
+  flex:0.5; 
+}
+.intro-text h1 {
+  font-size: 40px;
+  font-weight:  500;
+  }
+  
+  .intro-text p{
+      margin-top: 5px;
+      font-size: 22px;
+      color: #585772;
+  }
+  .cta{
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select{
+    border: 2px solid pink;
+    background: transparent;
+    color: pink;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-add{
+    border: none;
+    background: pink;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cover{
+    flex: 1;
+    display:flex;
+    height: 60vh;
+    justify-content: center;
+}
+.cover img{
+    height: 100%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
