@@ -6,11 +6,13 @@ class Home extends React.Component{
   render(){
     return(
 
+
+
 <body>
-
-
+<img  class = "backgroundImage" src = "https://i.ibb.co/NrWkrnC/background.jpg"  />
 
   <main>
+
 
         <section class="presentation">
                
@@ -25,12 +27,14 @@ class Home extends React.Component{
                   <div class="cta">
                       <button class ="cta-select" >Features</button>
                       <button class ="cta-add" >Download</button>
-                  </div>
+                  
+
               </div>
 
-              <div>
-              <img src = "./img/laptop.png" alt="laptop"></img>
               </div>
+                  <div class = "cover">
+                  <img src = "https://i.ibb.co/0nLQ6pw/laptop.png" alt="laptop" border="0" alt="laptop"></img>
+                  </div>
               
       </section>
   </main>

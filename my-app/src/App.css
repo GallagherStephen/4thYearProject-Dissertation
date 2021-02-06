@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url("assets/background.jpg");
+ 
   background-size: auto;
   min-height: 100vh;
 }
@@ -14,6 +14,7 @@
   color: black;
   font-size: 18px;
   text-decoration: none;
+
 }
 
 .centerElement {
@@ -46,49 +47,108 @@
 
 
 
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
+body{
+  font-family: 'Poppins' , sans-serif;
+}
 
 button{
   font-family: 'Poppins' , sans-serif;
 }
 
+header{
+  display: flex ;
+  width:100%;
+}
+
+.logo-container,.nav-links,.cart{
+  display: flex;
+}
+
+.logo{
+  font-weight: 400;
+  margin:5px;
+}
+.logo-container{
+  flex: 1;
+}
+
+nav{
+  flex: 1;
+}
+
+
+
+
+.nav-links{
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link{
+  flex: 1;
+  color: gray;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.cart{
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.presentation{
+  display:flex;
+  width:90%;
+  margin: auto;
+  min-height: 80vh;
+  align-items: center;
+ 
+}
+
 .introduction{
   flex:0.5; 
 }
+
 .intro-text h1 {
-  font-size: 40px;
-  font-weight:  500;
-  }
-  
-  .intro-text p{
-      margin-top: 5px;
-      font-size: 22px;
-      color: #585772;
-  }
-  .cta{
-    padding: 50px 0px 0px 0px;
+font-size: 40px;
+font-weight:  500;
+}
+
+.intro-text p{
+  margin-top: 5px;
+  font-size: 22px;
+  color: #585772;
+}
+
+.cta{
+  padding: 50px 0px 0px 0px;
 }
 
 .cta-select{
-    border: 2px solid pink;
-    background: transparent;
-    color: pink;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    font-size: 16px;
+  border: 2px solid pink;
+  background: transparent;
+  color: pink;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .cta-add{
-    border: none;
-    background: pink;
-    color: white;
-    width: 150px;
-    height: 50px;
-    cursor: pointer;
-    font-size: 16px;
+  border: none;
+  background: pink;
+  color: white;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
 }
-
 
 .cover{
   flex: 1;
@@ -102,11 +162,150 @@ button{
   animation: drop 1.5s ease;
 }
 
-.logo{
-  font-weight: 400;
-  margin:5px;
+
+.backgroundImage{
+  position: absolute;
+  top: 0px;
+  height: 150%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.contact-form{
+  width : 80%;
+  top: 50%;
+  left : 50%;
+  padding:30px 40px;
+  box-sizing: border-box;
+  text-align: absolute;
+}
+
+.contact-form h1{
+  margin-top: 0;
+  font-weight: 200;
+}
+.txtb{
+  border: 1px solid black;
+  text-align: left;
+  font-size:0 15px;
+  width: 50%;
+  overflow: hidden;
+  font-size:20px;
+  padding:12px 18px;
+  margin: 20px 0;
+  border-radius: 1px solid  #4caf50;
+}
+
+.txtb label{
+  display: block ;
+  text-align: left;
+  font-size: 13px;
+  
+}
+
+.txtb input,.txtb textarea{
+  width: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.login-box{
+  width : 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color : white;
 }
 
 
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid  #4caf50;
+  margin-bottom:50px;
+  padding:13px;
+}
+
+.textbox{
+  width: 20%;
+  overflow: hidden;
+  font-size:20px;
+  padding:8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid  #4caf50;
+}
+
+.textbox i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size:0 15px;
+  width: 100px;
+  float: left;
+  margin: 0 10px;
+}
+
+.btn{
+  width: 5%;
+  background: none;
+  border: 2px solid #4caf50;
+  padding: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 1px 0;
+}
+
+.btn2{
+  width: 10%;
+  background: none;
+  border: 2px solid #4caf50;
+  padding: 2px;
+  font-size: 12px;
+  cursor: pointer;
+  margin: 1px 0;
+  }
 
 
+
+@keyframes drop{
+  0%{
+      opacity: 0;
+      transform: translateY(-80px);
+  }
+  100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .presentation {
+      flex-direction: column;
+  }
+  .introduction{
+      margin-top:5vh;
+      text-align: center;
+  }
+  .intro-text h1{
+      font-size: 30px;
+  }
+  .intro-text p {
+      font-size: 18px;
+  }
+  .cta{
+      padding: 10px 0px 0px 0px;
+  }
+  .cover img {
+      height: 60%;
+  }
+}

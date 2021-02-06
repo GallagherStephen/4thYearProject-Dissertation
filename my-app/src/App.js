@@ -13,7 +13,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
       <Navbar className="navbar-dark navBarOpacity" sticky="top">
-        <img src="./assets/logo.png" alt="logo" />
+        <img src="https://i.ibb.co/5nbLxDc/logo.png" alt="logo" />
         <h4 class="navbar-brand" href="/">Student-Mania</h4>
           <Nav>
             <Nav.Link href="/home">Home</Nav.Link>
