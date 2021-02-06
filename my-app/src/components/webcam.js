@@ -1,11 +1,14 @@
 import React from 'react';
 import '../App.css';
 
-class Help extends React.Component{
+class Webcam extends React.Component{
 
   render(){
     return(
-      <body>
+
+<body>
+
+
 
   <main>
 
@@ -13,13 +16,11 @@ class Help extends React.Component{
                
                   <div class = "introduction">
                       <div class = "intro-text">
-                      <h1>Welcome to Student-Mania's Help Page</h1>
+                      <h1>Welcome to Student-Mania's Webcam Page</h1>
                       <p>
-                      paragrah blah blah  
+                        worlds best student application
                       </p>
                   </div>
-
-                
               </div>
 
               <div>
@@ -30,11 +31,8 @@ class Help extends React.Component{
   </main>
 
 </body>
-
-
-
     )
   }
 }
 
-export default Help;
+export default Webcam;

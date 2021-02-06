@@ -2,14 +2,18 @@
   text-align: center;
   background-image: url("assets/background.jpg");
   background-size: auto;
-  color:white;
   min-height: 100vh;
- 
 }
 
 .navBarOpacity {
   background-color:rgba(255, 0, 0, 0.15);
   box-shadow: 0px 0px 15px red;
+  justify-content: space-around;
+  list-style: none;
+  flex: 1;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .centerElement {
@@ -85,14 +89,24 @@ button{
     font-size: 16px;
 }
 
+
 .cover{
-    flex: 1;
-    display:flex;
-    height: 60vh;
-    justify-content: center;
+  flex: 1;
+  display:flex;
+  height: 60vh;
+  justify-content: center;
 }
 .cover img{
-    height: 100%;
-    filter: drop-shadow(0px 5px 3px black);
-    animation: drop 1.5s ease;
+  height: 100%;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
 }
+
+.logo{
+  font-weight: 400;
+  margin:5px;
+}
+
+
+
+
