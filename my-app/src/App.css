@@ -283,10 +283,25 @@ font-weight:  500;
   background: grey;
   }
 
-.classBoxes{
+.classBox1{
   width: 100px;
-  margin: auto;
+  margin: 20px;
   background: red;
+  }
+.classBox2{
+  width: 100px;
+  margin: 20px;
+  background: blue;
+  }
+.classBox3{
+  width: 100px;
+  margin: 20px;
+  background: grey;
+  }
+.classBox4{
+  width: 100px;
+  margin: 20px;
+  background: pink;
   }
 
 @keyframes drop{
