@@ -13,10 +13,10 @@ class Classes extends React.Component{
 
 <h2>My courses</h2>
 
-<div>module 1</div>
-<div>module 2</div>
-<div>module 3</div>
-<div>module 4</div>
+<div class="classBoxes">module 1</div>
+<div class="classBoxes">module 2</div>
+<div class="classBoxes">module 3</div>
+<div class="classBoxes">module 4</div>
 
 </section>
 </body>

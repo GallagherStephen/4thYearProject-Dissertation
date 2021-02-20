@@ -275,11 +275,18 @@ font-weight:  500;
   margin: 1px 0;
   }
 
-  .classes{
-    width: 100px;
-    margin: auto;
-    background: grey;
-    }
+.classes{
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  background: grey;
+  }
+
+.classBoxes{
+  width: 100px;
+  margin: auto;
+  background: red;
+  }
 
 @keyframes drop{
   0%{
