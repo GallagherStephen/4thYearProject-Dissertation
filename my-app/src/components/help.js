@@ -18,7 +18,7 @@ class Help extends React.Component{
                   <div class = "intro-text">
                       <h1>Website Video</h1>
                       <p>
-                       Help navigation of the website :
+                       Help navigation of the website : kevin jack stephent
                       </p>
                   </div>
               </div>
