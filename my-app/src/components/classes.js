@@ -5,6 +5,7 @@ class Classes extends React.Component{
 
   render(){
     return(
+      
 
       <body>
         <img  class = "backgroundImage" src = "https://i.ibb.co/NrWkrnC/background.jpg"  />
@@ -39,6 +40,18 @@ class Classes extends React.Component{
 
 </section>
 <h2 class ="pageHeadings">Edit classes Here:</h2>
+
+<div class="pageHeadings">
+  <br></br>
+Insert class name:
+<br></br>
+<input type="text" id="name"></input>
+<br></br>
+<br></br>
+<button class ="cta-select" >Clear</button>
+<button class ="cta-add" >Submit</button>
+</div>
+
 </body>
 
 

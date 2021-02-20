@@ -164,7 +164,8 @@ font-weight:  500;
 
 
 .backgroundImage{
-  position: absolute;
+  background-size: cover;
+  position:absolute;
   top: 0px;
   height: 150%;
   width: 100%;
@@ -340,6 +341,7 @@ font-weight:  500;
   font-family: Arial;
   text-decoration: underline;
 }
+
 
 @keyframes drop{
   0%{
