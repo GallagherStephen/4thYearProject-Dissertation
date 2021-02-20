@@ -275,7 +275,11 @@ font-weight:  500;
   margin: 1px 0;
   }
 
-
+  .classes{
+    width: 100px;
+    margin: auto;
+    background: grey;
+    }
 
 @keyframes drop{
   0%{
