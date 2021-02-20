@@ -1,13 +1,4 @@
-element.style {
-}
-@media (max-width: 979px)
-.has-page-header.page-header-margin.header-style1 #page {
-    margin-top: 112px;
-}
-@media (max-width: 979px)
-.page-header-margin.header-style1 #page {
-    margin-top: 50px;
-}
+
 #page {
     clear: both;
     margin: 0;
@@ -17,12 +8,7 @@ element.style {
 #page {
     margin-top: 50px;
 }
-element.style {
-}
-a, a:visited, .tabtree .tabrow0 li a {
-    color: #840018;
-    text-decoration: none;
-}
+
 a.skip-block, a.skip {
     position: absolute;
     top: -1000em;
