@@ -278,7 +278,7 @@ font-weight:  500;
 .classes{
   width: 100px;
   display: flex;
-  padding:20px;
+  padding:100px;
   flex-direction: row;
   background: white;
   }
@@ -286,23 +286,60 @@ font-weight:  500;
 .classBox1{
   width: 100px;
   margin: 20px;
+  padding: 100px;
   background: red;
+  border: 20px blue;
   }
 .classBox2{
   width: 100px;
-  margin: 60px;
+  margin: 20px;
+  padding: 100px;
   background: blue;
   }
 .classBox3{
   width: 100px;
   margin: 20px;
+  padding: 100px;
   background: grey;
   }
 .classBox4{
+  padding: 100px;
   width: 100px;
-  margin: 800px;
+  margin: 20px;
   background: pink;
   }
+
+.classBox5{
+  padding: 100px;
+  width: 100px;
+  margin: 20px;
+  background: green;
+  }
+
+.classBox6{
+  padding: 100px;
+  width: 100px;
+  margin: 20px;
+  background: yellow;
+  }
+.classBox7{
+  padding: 100px;
+  width: 100px;
+  margin: 20px;
+  background: black;
+  }
+
+
+.pageHeadings{
+  font-family:  sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subHeadings{
+  font-family: Arial;
+  text-decoration: underline;
+}
 
 @keyframes drop{
   0%{
