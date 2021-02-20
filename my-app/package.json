@@ -16,6 +16,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "devStart": "nodemon server.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.7"
   }
 }
