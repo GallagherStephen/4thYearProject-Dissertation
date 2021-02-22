@@ -6,8 +6,8 @@
 }
 
 .navBarOpacity {
-  background-color:rgba(255, 0, 0, 0.15);
-  box-shadow: 0px 0px 15px red;
+  background-color:rgba(2, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px black;
   justify-content: space-around;
   list-style: none;
   flex: 1;
@@ -374,4 +374,20 @@ font-weight:  500;
   .cover img {
       height: 60%;
   }
+}
+
+.bodyFormat {
+  margin-top: 2em;
+  margin-left: 6em;
+  margin-right: 6em;
+  box-shadow: 0px 0px 25px red;
+  border-radius: 30px;
+  background-color:rgba(255, 0, 0, 0.15);
+  line-height: 1.8;
+}
+
+.centerElement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
