@@ -19,6 +19,10 @@ function App() {
       <div className="App">
       <Navbar className="navbar-dark navBarOpacity" sticky="top">
         <img src="https://i.ibb.co/5nbLxDc/logo.png" alt="logo" />
+        <br></br>
+        <a href="https://www.facebook.com/Student-mania-108833497918996/?ref=page_internal" class="links"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/student.mania/" class="links"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://linktr.ee/Student.Mania" class="links"><i class="fas fa-link"></i></a>
         <h4 class="navbar-brand" href="/">Student-Mania</h4>
           <Nav>
             <Nav.Link href="/home">Home</Nav.Link>

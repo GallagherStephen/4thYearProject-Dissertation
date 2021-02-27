@@ -30,7 +30,8 @@ class Home extends React.Component{
                   <div class="cta">
                       <button class ="cta-select" >Features</button>
                       <button class ="cta-add" >Download</button>
-                  
+                 
+                 
 
               </div>
 
@@ -40,11 +41,13 @@ class Home extends React.Component{
                   <img src = "https://i.ibb.co/0nLQ6pw/laptop.png" alt="laptop" border="0" alt="laptop"></img>
                   
                   </div>
-              
+             
       </section>
       <img  class = "backgroundImage" src = "https://i.ibb.co/NrWkrnC/background.jpg"  /> 
+      
   </main>
 
+  
 </body>
     )
   }
