@@ -8,11 +8,12 @@ class Help extends React.Component{
       <body>
           <img  class = "backgroundImage" src = "https://i.ibb.co/NrWkrnC/background.jpg"  />
   <main>
+    
       <h1 class ="pageHeadings" >Welcome to Student-Mania's Help Page</h1>
         <section class="presentation">
 
                
-                  
+
                 <div class = "introduction">
 
                   <div class = "intro-text">
@@ -20,6 +21,7 @@ class Help extends React.Component{
                       <p>
                        Help navigation of the website : kevin jack stephent
                       </p>
+                      
                   </div>
               </div>
 

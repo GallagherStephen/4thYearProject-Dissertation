@@ -5,6 +5,7 @@ import Classes from './components/classes';
 import Help from './components/help';
 import Query from './components/query';
 import ForumPage from './components/forumPage';
+import CollegeTweets from './components/collegeTweets';
 import Webcam from './components/webcam';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,6 +33,9 @@ function App() {
             <NavDropdown.Item href="/query">Query Page</NavDropdown.Item>
             <NavDropdown.Item href="/forumPage">Forum Page</NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Resources">
+            <NavDropdown.Item href="/collegeTweets">Tweets page</NavDropdown.Item>
+            </NavDropdown>
             <Nav.Link href="/webcam">webcam</Nav.Link>
           </Nav>
         </Navbar>
@@ -43,6 +47,7 @@ function App() {
           <Route exact path='/help' component={Help}/>
           <Route exact path='/query' component={Query}/>
           <Route exact path='/forumPage' component={ForumPage}/>
+          <Route exact path='/collegeTweets' component={CollegeTweets}/>
           <Route exact path='/webcam' component={Webcam}/>
         </Switch>
       </div>
