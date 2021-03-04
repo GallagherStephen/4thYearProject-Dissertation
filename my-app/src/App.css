@@ -342,6 +342,11 @@ font-weight:  500;
   text-decoration: underline;
 }
 
+.tweetboxes{
+  padding: 100px;
+  width: 100px;
+  margin: 20px;
+  }
 
 @keyframes drop{
   0%{
