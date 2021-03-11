@@ -14,7 +14,6 @@
   color: black;
   font-size: 18px;
   text-decoration: none;
-
 }
 
 .centerElement {
@@ -95,6 +94,7 @@ nav{
   color: gray;
   font-size: 18px;
   text-decoration: none;
+  margin: 0 5px;
 }
 
 .cart{
@@ -342,6 +342,11 @@ font-weight:  500;
   text-decoration: underline;
 }
 
+.tweetboxes{
+  padding: 100px;
+  width: 100px;
+  margin: 20px;
+  }
 
 @keyframes drop{
   0%{
@@ -390,4 +395,15 @@ font-weight:  500;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.links {
+  margin: 0 10px;
+  width: 25px;
+  height: 30%;
+  padding: 5px;
+}
+
+.links:hover {
+  color: red;
 }
