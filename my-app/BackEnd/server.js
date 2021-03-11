@@ -5,10 +5,19 @@ const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const mongoDB = "mongodb+srv://admin:studentmania@cluster0.ryrsz.mongodb.net/modulesDB?retryWrites=true&w=majority";
+
+const MongoClient = require('mongodb').MongoClient;
+const uri = "mongodb+srv://admin:<studentmania>@cluster0.ryrsz.mongodb.net/modulesDB?retryWrites=true&w=majority";
+const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
+client.connect(err => {
+  const collection = client.db("test").collection("devices");
+  // perform actions on the collection object
+  client.close();
+});
 
 
 
+// admin:studentmania      modulesDB
 // Connecting to the MongoDB
 mongoose.connect(mongoDB,{useNewUrlParser:true});
 
