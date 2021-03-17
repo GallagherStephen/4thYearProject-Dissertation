@@ -8,6 +8,7 @@ import ForumPage from './components/forumPage';
 import covid19FAQs from './components/covid19FAQs';
 import CollegeTweets from './components/collegeTweets';
 import SportsPage from './components/sportsPage';
+import TechPage from './components/techPage';
 import Webcam from './components/webcam';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -39,6 +40,7 @@ function App() {
             <NavDropdown.Item href="/covid19FAQs">Covid 19 FAQs</NavDropdown.Item>
             <NavDropdown.Item href="/collegeTweets">Tweets</NavDropdown.Item>
             <NavDropdown.Item href="/sportsPage">Sports</NavDropdown.Item>
+            <NavDropdown.Item href="/techPage">Useful Software</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/webcam">webcam</Nav.Link>
           </Nav>
@@ -54,6 +56,7 @@ function App() {
           <Route exact path='/covid19FAQs' component={covid19FAQs}/>
           <Route exact path='/collegeTweets' component={CollegeTweets}/>
           <Route exact path='/sportsPage' component={SportsPage}/>
+          <Route exact path='/techPage' component={TechPage}/>
           <Route exact path='/webcam' component={Webcam}/>
         </Switch>
       </div>
