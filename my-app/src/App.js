@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import Home from './components/home';
+import Login from './components/login';
+import Register from './components/register';
 import Classes from './components/classes';
 import Help from './components/help';
 import Query from './components/query';
@@ -31,6 +33,8 @@ function App() {
         <a href="https://linktr.ee/Student.Mania" class="links"><i class="fas fa-link"></i></a>
         <h4 class="navbar-brand" href="/">Student-Mania</h4>
           <Nav>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/register">Register</Nav.Link>
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/classes">classes</Nav.Link>
             <NavDropdown title="Contact Section">
@@ -52,6 +56,8 @@ function App() {
         <br/>
         <Switch>
           <Route exact path='/' component={Home}/>
+          <Route exact path='/login' component={Login}/>
+          <Route exact path='/register' component={Register}/>
           <Route exact path='/home' component={Home}/>
           <Route exact path='/classes' component={Classes}/>
           <Route exact path='/help' component={Help}/>

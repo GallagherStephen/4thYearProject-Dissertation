@@ -91,7 +91,7 @@ nav{
 
 .nav-link{
   flex: 1;
-  color: gray;
+  color: #011c39;
   font-size: 18px;
   text-decoration: none;
   margin: 0 5px;
@@ -485,5 +485,5 @@ font-weight:  500;
 }
 
 .links:hover {
-  color: red;
+  color: black;
 }

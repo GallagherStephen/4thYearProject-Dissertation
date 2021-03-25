@@ -1,47 +1,63 @@
 import React from 'react';
 import '../App.css';
 
-class Home extends React.Component{
+class register extends React.Component{
 
   render(){
     return(
 
 
-
 <body>
-
 
   <main>
 
-
+        <h1 class="pageHeadings" ><b>Register Page</b></h1>
+        
         <section class="presentation">
                
                   <div class = "introduction">
                     
                       <div class = "intro-text">
                        
-                      <h1>Aplication for the Future</h1>
+                      <h1> </h1>
                       <p>
-                        Welcome to Student-Mania the worlds best student application
+                        
                       </p>
                       
                   </div>
 
-                  <form method="POST">
-                  <div class="cta">                                                         
-                      <button class ="cta-select" action="/login" >login</button>
-                      <button class ="cta-add"    action="/register" >Register</button>
-                 </div>
-                </form>
-                 
-                
+                  <br></br>
+                  <br></br>
 
-              
+                      
+                  <div class="container">
+                    
+                    <h2 class ="pageHeadings">Register Here:</h2>
+
+                    <div class="pageHeadings">
+                    <br></br>
+                    Username:
+                    <br></br>
+                    <input type="text" id="username" placeholder="Username"></input>
+                    <br></br>
+                    <br></br>
+                    Password:
+                    <br></br>
+                    <input type="text" id="name" placeholder="Password"></input>
+                    <br></br>
+                    <br></br>
+                    
+                    <button class ="cta-add" type="submit" >Register</button>
+                    </div>
+                    
+                </div>  
+                      
+
 
               </div>
                   <div class = "cover">
                     
-                  <img src = "https://i.ibb.co/0nLQ6pw/laptop.png" alt="laptop" border="0" alt="laptop"></img>
+                  <img src = " https://media3.giphy.com/media/ibA3YKARiz1XwYDTAM/giphy.gif"  border="0" alt="laptop"></img>
                   
                   </div>
              
@@ -49,6 +65,8 @@ class Home extends React.Component{
       <img  class = "backgroundImage" src = "https://i.ibb.co/NrWkrnC/background.jpg"  /> 
       
   </main>
+
+  
 
   <footer class="footer">
     
@@ -62,14 +80,12 @@ class Home extends React.Component{
       </div>
     </div>
     </footer>
-  
+
+
+
 </body>
-
-
-
-
     )
   }
 }
 
-export default Home;
+export default register;
