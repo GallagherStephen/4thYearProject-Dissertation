@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 class Home extends React.Component{
 
   render(){
@@ -38,6 +40,11 @@ class Home extends React.Component{
                 <form method="get" action="/chatPageDisplay">
                 <button type="submit">chat Page</button>
                 </form>
+
+                <a>
+
+                <MessengerCustomerChat pageId="108833497918996" appId="747301485767892" />
+                </a>
               
 
               </div>
