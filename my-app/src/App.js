@@ -50,6 +50,7 @@ function App() {
             <NavDropdown.Item href="/sportsPage">Sports</NavDropdown.Item>
             <NavDropdown.Item href="/techPage">Useful Software</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/chatpage.html">chat</Nav.Link>
             <Nav.Link href="/webcam">webcam</Nav.Link>
           </Nav>
         </Navbar>

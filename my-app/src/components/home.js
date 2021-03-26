@@ -35,7 +35,9 @@ class Home extends React.Component{
                 </form>
                  
                 
-
+                <form method="get" action="/chatPageDisplay">
+                <button type="submit">chat Page</button>
+                </form>
               
 
               </div>
