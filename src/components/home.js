@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 
 class Home extends React.Component{
 
@@ -43,7 +43,7 @@ class Home extends React.Component{
 
                 <a>
 
-                <MessengerCustomerChat pageId="108833497918996" appId="747301485767892" />
+                
                 </a>
               
 
