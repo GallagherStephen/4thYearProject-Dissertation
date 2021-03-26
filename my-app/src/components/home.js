@@ -37,6 +37,7 @@ class Home extends React.Component{
                 </form>
                  
                 
+<<<<<<< HEAD
                 <form method="get" action="/chatPageDisplay">
                 <button type="submit">chat Page</button>
                 </form>
@@ -45,6 +46,9 @@ class Home extends React.Component{
 
                 <MessengerCustomerChat pageId="108833497918996" appId="747301485767892" />
                 </a>
+=======
+
+>>>>>>> parent of c66fcb8d... added chat page on a static html page but doesnt display on the react app as static
               
 
               </div>
