@@ -13,6 +13,7 @@ import covid19FAQs from './components/covid19FAQs';
 import CollegeTweets from './components/collegeTweets';
 import SportsPage from './components/sportsPage';
 import TechPage from './components/techPage';
+import Chat from './components/chat';
 import Webcam from './components/webcam';
 import WebcamRoom from './components/webcamRoom';
 import './App.css';
@@ -51,6 +52,7 @@ function App() {
             <NavDropdown.Item href="/sportsPage">Sports</NavDropdown.Item>
             <NavDropdown.Item href="/techPage">Useful Software</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/chat">chat</Nav.Link>
             <Nav.Link href="/webcam">webcam</Nav.Link>
           </Nav>
         </Navbar>
@@ -70,6 +72,7 @@ function App() {
           <Route exact path='/techPage' component={TechPage}/>
           <Route exact path='/addNotes' component={AddNotes}/>
           <Route exact path='/notes' component={Notes}/>
+          <Route exact path='/chat' component={Chat}/>
           <Route exact path='/webcam' component={WebcamRoom}/>
           <Route path='/room/:roomID' component={Webcam}/>
         </Switch>
