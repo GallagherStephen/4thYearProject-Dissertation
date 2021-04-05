@@ -26,7 +26,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
       <Navbar className="navbar-dark navBarOpacity" sticky="top">
-        <img src="https://i.ibb.co/5nbLxDc/logo.png" alt="logo" />
+        <img src="https://i.ibb.co/jgTt0rK/logo.png" alt="logo" />
         <br></br>
         <a href="https://www.facebook.com/Student-mania-108833497918996/?ref=page_internal" class="links"><i class="fab fa-facebook-square"></i></a>
         <a href="https://www.instagram.com/student.mania/" class="links"><i class="fab fa-instagram-square"></i></a>
