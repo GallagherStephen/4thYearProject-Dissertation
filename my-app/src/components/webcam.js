@@ -1,38 +1,130 @@
-import React from 'react';
-import '../App.css';
+import React, { useRef, useEffect } from "react";
+import io from "socket.io-client";
 
-class Webcam extends React.Component{
+const Webcam = (props) => {
+    const userVideo = useRef();
+    const partnerVideo = useRef();
+    const peerRef = useRef();
+    const socketRef = useRef();
+    const otherUser = useRef();
+    const userStream = useRef();
 
-  render(){
-    return(
+    useEffect(() => {
+        navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(stream => {
+            userVideo.current.srcObject = stream;
+            userStream.current = stream;
 
-<body>
+            socketRef.current = io.connect("/");
+            socketRef.current.emit("join room", props.match.params.roomID);
 
-<a class="twitter-timeline" data-width="500" data-height="1200" data-theme="dark" href="https://twitter.com/nuigalway?ref_src=twsrc%5Etfw">Tweets by nuigalway</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            socketRef.current.on('other user', userID => {
+                callUser(userID);
+                otherUser.current = userID;
+            });
 
-  <main>
+            socketRef.current.on("user joined", userID => {
+                otherUser.current = userID;
+            });
 
-        <section class="presentation">
-               
-                  <div class = "introduction">
-                      <div class = "intro-text">
-                      <h1>Welcome to Student-Mania's Webcam Page</h1>
-                      <p>
-                        worlds best student application
-                      </p>
-                  </div>
-              </div>
+            socketRef.current.on("offer", handleRecieveCall);
 
-              <div>
-              <img src = "./img/laptop.png" alt="laptop"></img>
-              </div>
-              
-      </section>
-  </main>
+            socketRef.current.on("answer", handleAnswer);
 
-</body>
-    )
-  }
-}
+            socketRef.current.on("ice-candidate", handleNewICECandidateMsg);
+        });
+
+    }, []);
+
+    function callUser(userID) {
+        peerRef.current = createPeer(userID);
+        userStream.current.getTracks().forEach(track => peerRef.current.addTrack(track, userStream.current));
+    }
+
+    function createPeer(userID) {
+        const peer = new RTCPeerConnection({
+            iceServers: [
+                {
+                    urls: "stun:stun.stunprotocol.org"
+                },
+                {
+                    urls: 'turn:numb.viagenie.ca',
+                    credential: 'muazkh',
+                    username: 'webrtc@live.com'
+                },
+            ]
+        });
+
+        peer.onicecandidate = handleICECandidateEvent;
+        peer.ontrack = handleTrackEvent;
+        peer.onnegotiationneeded = () => handleNegotiationNeededEvent(userID);
+
+        return peer;
+    }
+
+    function handleNegotiationNeededEvent(userID) {
+        peerRef.current.createOffer().then(offer => {
+            return peerRef.current.setLocalDescription(offer);
+        }).then(() => {
+            const payload = {
+                target: userID,
+                caller: socketRef.current.id,
+                sdp: peerRef.current.localDescription
+            };
+            socketRef.current.emit("offer", payload);
+        }).catch(e => console.log(e));
+    }
+
+    function handleRecieveCall(incoming) {
+        peerRef.current = createPeer();
+        const desc = new RTCSessionDescription(incoming.sdp);
+        peerRef.current.setRemoteDescription(desc).then(() => {
+            userStream.current.getTracks().forEach(track => peerRef.current.addTrack(track, userStream.current));
+        }).then(() => {
+            return peerRef.current.createAnswer();
+        }).then(answer => {
+            return peerRef.current.setLocalDescription(answer);
+        }).then(() => {
+            const payload = {
+                target: incoming.caller,
+                caller: socketRef.current.id,
+                sdp: peerRef.current.localDescription
+            }
+            socketRef.current.emit("answer", payload);
+        })
+    }
+
+    function handleAnswer(message) {
+        const desc = new RTCSessionDescription(message.sdp);
+        peerRef.current.setRemoteDescription(desc).catch(e => console.log(e));
+    }
+
+    function handleICECandidateEvent(e) {
+        if (e.candidate) {
+            const payload = {
+                target: otherUser.current,
+                candidate: e.candidate,
+            }
+            socketRef.current.emit("ice-candidate", payload);
+        }
+    }
+
+    function handleNewICECandidateMsg(incoming) {
+        const candidate = new RTCIceCandidate(incoming);
+
+        peerRef.current.addIceCandidate(candidate)
+            .catch(e => console.log(e));
+    }
+
+    function handleTrackEvent(e) {
+        partnerVideo.current.srcObject = e.streams[0];
+    };
+
+    return (
+        <div>
+            <video autoPlay ref={userVideo} />
+            <video autoPlay ref={partnerVideo} />
+        </div>
+    );
+};
 
 export default Webcam;

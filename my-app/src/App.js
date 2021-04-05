@@ -14,6 +14,7 @@ import CollegeTweets from './components/collegeTweets';
 import SportsPage from './components/sportsPage';
 import TechPage from './components/techPage';
 import Webcam from './components/webcam';
+import WebcamRoom from './components/webcamRoom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, NavDropdown, Nav } from "react-bootstrap";
@@ -69,7 +70,8 @@ function App() {
           <Route exact path='/techPage' component={TechPage}/>
           <Route exact path='/addNotes' component={AddNotes}/>
           <Route exact path='/notes' component={Notes}/>
-          <Route exact path='/webcam' component={Webcam}/>
+          <Route exact path='/webcam' component={WebcamRoom}/>
+          <Route path='/room/:roomID' component={Webcam}/>
         </Switch>
       </div>
       </BrowserRouter>
