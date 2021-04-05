@@ -8,11 +8,12 @@ import Help from './components/help';
 import Query from './components/query';
 import ForumPage from './components/forumPage';
 import AddNotes from './components/addNotes';
-import Notes from './components/notes';
 import covid19FAQs from './components/covid19FAQs';
 import CollegeTweets from './components/collegeTweets';
 import SportsPage from './components/sportsPage';
 import TechPage from './components/techPage';
+import Chat from './components/chat';
+import WebcamCapture from './components/webcamCapture';
 import Webcam from './components/webcam';
 import WebcamRoom from './components/webcamRoom';
 import './App.css';
@@ -42,8 +43,6 @@ function App() {
             <NavDropdown.Item href="/help">Help Page</NavDropdown.Item>
             <NavDropdown.Item href="/query">Query Page</NavDropdown.Item>
             <NavDropdown.Item href="/forumPage">Forum Page</NavDropdown.Item>
-            <NavDropdown.Item href="/addNotes">Add Notes</NavDropdown.Item>
-            <NavDropdown.Item href="/notes">Notes and Tips</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Resources">
             <NavDropdown.Item href="/covid19FAQs">Covid 19 FAQs</NavDropdown.Item>
@@ -51,6 +50,8 @@ function App() {
             <NavDropdown.Item href="/sportsPage">Sports</NavDropdown.Item>
             <NavDropdown.Item href="/techPage">Useful Software</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/chat">chat</Nav.Link>
+            <Nav.Link href="/webcamCapture">webcamCapture</Nav.Link>
             <Nav.Link href="/webcam">webcam</Nav.Link>
           </Nav>
         </Navbar>
@@ -69,7 +70,8 @@ function App() {
           <Route exact path='/sportsPage' component={SportsPage}/>
           <Route exact path='/techPage' component={TechPage}/>
           <Route exact path='/addNotes' component={AddNotes}/>
-          <Route exact path='/notes' component={Notes}/>
+          <Route exact path='/webcamCapture' component={WebcamCapture}/>
+          <Route exact path='/chat' component={Chat}/>
           <Route exact path='/webcam' component={WebcamRoom}/>
           <Route path='/room/:roomID' component={Webcam}/>
         </Switch>

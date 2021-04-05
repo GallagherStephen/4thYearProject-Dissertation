@@ -1,28 +1,14 @@
 const express = require('express')
-const http = require("http");
 const app = express()
 const port = 4000
 const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const server = http.createServer(app);
-const socket = require("socket.io");
-const io = socket(server);
-
-
-const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://admin:<studentmania>@cluster0.ryrsz.mongodb.net/modulesDB?retryWrites=true&w=majority";
-const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
-client.connect(err => {
-  const collection = client.db("test").collection("devices");
-  // perform actions on the collection object
-  client.close();
-});
+const mongoDB = "mongodb+srv://admin:studentmania@cluster0.ryrsz.mongodb.net/modulesDB?retryWrites=true&w=majority";
 
 
 
-// admin:studentmania      modulesDB
 // Connecting to the MongoDB
 mongoose.connect(mongoDB,{useNewUrlParser:true});
 
@@ -109,38 +95,6 @@ app.put("/api/forums/:id", (req, res)=>{
         res.json(data);
     })
 })
-
-
-// Used for the code for webcam 
-io.on("connection", socket => {
-    socket.on("join room", roomID => {
-        if (rooms[roomID]) {
-            rooms[roomID].push(socket.id);
-        } else {
-            rooms[roomID] = [socket.id];
-        }
-        const otherUser = rooms[roomID].find(id => id !== socket.id);
-        if (otherUser) {
-            socket.emit("other user", otherUser);
-            socket.to(otherUser).emit("user joined", socket.id);
-        }
-    });
-
-    socket.on("offer", payload => {
-        io.to(payload.target).emit("offer", payload);
-    });
-
-    socket.on("answer", payload => {
-        io.to(payload.target).emit("answer", payload);
-    });
-
-    socket.on("ice-candidate", incoming => {
-        io.to(incoming.target).emit("ice-candidate", incoming.candidate);
-    });
-});
-
-
-
 
 // Port Listener (Port 4000)
 app.listen(port, () => console.log(`Listening on port ${port}!`))

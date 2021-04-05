@@ -13,6 +13,8 @@ class Home extends React.Component{
 <body>
 
 
+
+
   <main>
 
 
@@ -36,11 +38,6 @@ class Home extends React.Component{
                  </div>
                 </form>
                  
-                
-
-                <form method="get" action="/chatPageDisplay">
-                <button type="submit">chat Page</button>
-                </form>
 
 
                 
