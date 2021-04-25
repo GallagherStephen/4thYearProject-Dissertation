@@ -39,6 +39,12 @@ const forumSchema = new Schema({
 
 const ForumModel = mongoose.model('forum', forumSchema);
 
+app.get('/', (req, res) => {
+    ForumModel.find((error, data) =>{
+        res.status(200).json({error: "api online"});
+    })
+})
+
 app.get('/api/forums', (req, res) => {
     ForumModel.find((error, data) =>{
         res.json({forums:data});

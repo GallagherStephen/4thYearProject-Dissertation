@@ -12,7 +12,7 @@ class ForumPage extends React.Component{
   }
 
   componentDidMount() {
-      axios.get('http://studentmania-env.eba-dtpmp3rm.eu-west-1.elasticbeanstalk.com/api/forums')//http://localhost:4000/api/forums
+      axios.get('https://api.student-mania.com/api/forums')//http://localhost:4000/api/forums
       .then((response)=>{
           this.setState({forums: response.data.forums})
       })
