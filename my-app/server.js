@@ -41,7 +41,7 @@ const ForumModel = mongoose.model('forum', forumSchema);
 
 app.get('/', (req, res) => {
     ForumModel.find((error, data) =>{
-        res.status(200).json({error: "api online"});
+        res.status(200).json({status: "api online"});
     })
 })
 
