@@ -41,7 +41,7 @@ class Query extends React.Component {
     };
 
     //Posts the request to the server, with the newly created Case
-    axios.post('http://studentmania-env.eba-dtpmp3rm.eu-west-1.elasticbeanstalk.com/api/forums', newQuery)  //http://localhost:4000/api/forums
+    axios.post('https://api.student-mania.com/api/forums', newQuery)  //http://localhost:4000/api/forums
     .then()
     .catch();
 
