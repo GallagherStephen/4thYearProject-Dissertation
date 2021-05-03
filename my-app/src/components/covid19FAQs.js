@@ -31,7 +31,7 @@ class Home extends React.Component{
 
 
                       <h4>Where did COVID-19 come from?</h4>
-                      <p>
+                      <p class="white">
                       The first known infections from SARS-CoV-2 were discovered in Wuhan, China. 
                       The original source of viral transmission to humans remains unclear, 
                       as does whether the virus became pathogenic before or after the spillover event.
@@ -42,7 +42,7 @@ class Home extends React.Component{
                       </p>
              
                       <h4>Who is at risk for coronavirus?</h4>
-                      <p>
+                      <p class="white">
                       The virus that causes COVID-19 infects people of all ages. However,
                       evidence to date suggests that two groups of people are at a higher risk of getting severe COVID-19 disease.
                       These are older people (that is people over 60 years old); and those with underlying medical conditions 

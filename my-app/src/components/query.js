@@ -56,8 +56,8 @@ class Query extends React.Component {
   render() {
       return (
           <div>
-              <h1><b>Query Page</b></h1>
-              <h2>If You have a Query that needs help leave a comment and us or our community will help!</h2>
+              <h1 class="pageHeadings"><b>Query Page</b></h1>
+              <h2 class="pageHeadings">If You have a query,leave a comment and we or our community will assist you!</h2>
               <div class="bodyFormat">
                 <div class="centerElement">
                   <Form onSubmit={this.handleQuerySubmit}>
