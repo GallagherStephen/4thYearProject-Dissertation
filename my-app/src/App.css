@@ -1,9 +1,68 @@
 .App {
   text-align: center;
   background-size: auto;
-  min-height: 100vh;
+  min-height: auto;
 }
 
+button{
+  font-family: 'Poppins' , sans-serif;
+}
+
+header{
+  display: flex ;
+  width:100%;
+}
+
+.logo-container,.nav-links,.cart{
+  display: flex;
+}
+
+.logo{
+  font-weight: 400;
+  margin:5px;
+}
+.logo-container{
+  flex: 1;
+}
+
+nav{
+  flex: 1;
+}
+
+
+.nav-links{
+  justify-content: space-around;
+  list-style: none;
+}
+
+.nav-link{
+  flex: 1;
+  color: #011c39;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.cart{
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.links {
+  margin: 0 10px;
+  width: 25px;
+  height: 30%;
+  padding: 5px;
+}
+
+.links:hover {
+  color: black;
+}
+/* 
+==========================
+-- NAVBAR FROM HERE -- 
+==========================
+*/
 .navBarOpacity {
   background-color:rgba(2, 0, 0, 0.15);
   box-shadow: 0px 0px 15px black;
@@ -19,6 +78,17 @@
   color: #f0f0f1;
 }
 
+/* add notes page */
+.bodyFormat {
+  margin-top: 2em;
+  margin-left: 6em;
+  margin-right: 6em;
+  box-shadow: 0px 0px 25px red;
+  border-radius: 30px;
+  background-color:rgba(255, 0, 0, 0.15);
+  line-height: 1.8;
+}
+/* add notes page */
 .centerElement {
   display: flex;
   align-items: center;
@@ -37,16 +107,6 @@
   margin: 2em;
 }
 
-.bodyFormat {
-  margin-top: 2em;
-  margin-left: 6em;
-  margin-right: 6em;
-  box-shadow: 0px 0px 25px red;
-  border-radius: 30px;
-  background-color:rgba(255, 0, 0, 0.15);
-  line-height: 1.8;
-}
-
 
 
 *{
@@ -55,6 +115,11 @@
   box-sizing: border-box;
 }
 
+/* 
+======================
+-- LOGIN FROM HERE -- 
+======================
+*/
 body{
   font-family: 'Poppins' , sans-serif;
   background: linear-gradient(120deg,#2980b9, #8e44ad);
@@ -103,7 +168,6 @@ body{
   transition: .5s;
 }
 
-
 .question{
   margin: 30px 0;
   text-align: center;
@@ -117,51 +181,11 @@ body{
   cursor: pointer;
 }
 
-button{
-  font-family: 'Poppins' , sans-serif;
-}
-
-header{
-  display: flex ;
-  width:100%;
-}
-
-.logo-container,.nav-links,.cart{
-  display: flex;
-}
-
-.logo{
-  font-weight: 400;
-  margin:5px;
-}
-.logo-container{
-  flex: 1;
-}
-
-nav{
-  flex: 1;
-}
-
-
-
-
-.nav-links{
-  justify-content: space-around;
-  list-style: none;
-}
-
-.nav-link{
-  flex: 1;
-  color: #011c39;
-  font-size: 18px;
-  text-decoration: none;
-  margin: 0 5px;
-}
-
-.cart{
-  flex: 1;
-  justify-content: flex-end;
-}
+/* 
+==========================
+-- HOMESCREEN FROM HERE -- 
+==========================
+*/
 
 .presentation{
   display:flex;
@@ -187,6 +211,24 @@ font-weight:  500;
   color: #f0f0f1;
 }
 
+/* for animated laptop */
+.cover{
+  flex: 1;
+  display:flex;
+  height: 60vh;
+  justify-content: center;
+}
+.cover img{
+  height: 100%;
+  filter: drop-shadow(0px 5px 3px black);
+  animation: drop 1.5s ease;
+}
+/* 
+==========================
+        -- Buttons -- 
+==========================
+*/
+
 .cta{
   padding: 50px 0px 0px 0px;
 }
@@ -211,122 +253,19 @@ font-weight:  500;
   font-size: 16px;
 }
 
-.cover{
-  flex: 1;
-  display:flex;
-  height: 60vh;
-  justify-content: center;
-}
-.cover img{
-  height: 100%;
-  filter: drop-shadow(0px 5px 3px black);
-  animation: drop 1.5s ease;
-}
+/* 
+==========================
+        -- ENDS -- 
+==========================
+*/
 
 
-.contact-form{
-  width : 80%;
-  top: 50%;
-  left : 50%;
-  padding:30px 40px;
-  box-sizing: border-box;
-  text-align: absolute;
-}
 
-.contact-form h1{
-  margin-top: 0;
-  font-weight: 200;
-}
-.txtb{
-  border: 1px solid black;
-  text-align: left;
-  font-size:0 15px;
-  width: 50%;
-  overflow: hidden;
-  font-size:20px;
-  padding:12px 18px;
-  margin: 20px 0;
-  border-radius: 1px solid  #4caf50;
-}
-
-.txtb label{
-  display: block ;
-  text-align: left;
-  font-size: 13px;
-  
-}
-
-.txtb input,.txtb textarea{
-  width: 100%;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-.login-box{
-  width : 280px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color : white;
-}
-
-
-.login-box h1{
-  float: left;
-  font-size: 40px;
-  border-bottom: 6px solid  #4caf50;
-  margin-bottom:50px;
-  padding:13px;
-}
-
-.textbox{
-  width: 20%;
-  overflow: hidden;
-  font-size:20px;
-  padding:8px 0;
-  margin: 8px 0;
-  border-bottom: 1px solid  #4caf50;
-}
-
-.textbox i{
-  width: 26px;
-  float: left;
-  text-align: center;
-}
-
-.textbox input{
-  border: none;
-  outline: none;
-  background: none;
-  color: black;
-  font-size:0 15px;
-  width: 100px;
-  float: left;
-  margin: 0 10px;
-}
-
-.btn{
-  width: 5%;
-  background: none;
-  border: 2px solid #4caf50;
-  padding: 2px;
-  font-size: 12px;
-  cursor: pointer;
-  margin: 1px 0;
-}
-
-.btn2{
-  width: 10%;
-  background: none;
-  border: 2px solid #4caf50;
-  padding: 2px;
-  font-size: 12px;
-  cursor: pointer;
-  margin: 1px 0;
-  }
-
+/* 
+============================
+-- CLASSES PAGE FROM HERE -- 
+============================
+*/
 .classes{
   width: 100px;
   display: flex;
@@ -381,92 +320,33 @@ font-weight:  500;
   background: black;
   }
 
-
 .pageHeadings{
   font-family:  sans-serif;
   text-align: center;
   text-transform: uppercase;
 }
-
+ /*  used in classes page */
 .subHeadings{
   font-family: Arial;
   text-decoration: underline;
 }
 
+/* 
+==========================
+-- TWEETPAGE FROM HERE -- 
+==========================
+*/
 .tweetboxes{
   padding: 100px;
   width: 100px;
   margin: 20px;
   }
-
-  .footer{
-    display:  -webkit-flex;
-    display:  -moz-flex;
-    display:  -ms-flex;
-    display:  -o-flex;
-    display:  flex;
-    flex-flow: row wrap;
-    padding: 50px;
-    color: #fff;
-    background-color: #011c39;
-    }
-
-    *,*:before,*:after{
-      box-sizing: border-box;
-    }
-
-  .footer-left{
-      margin-right: 1.25em;
-      margin-bottom: 2em;
-    }
-
-  .footer li{
-    line-height: 2em;
-    }
-
-  .footer-right{
-      display:  -webkit-flex;
-      display:  -moz-flex;
-      display:  -ms-flex;
-      display:  -o-flex;
-      display:  flex;
-      flex-flow: row wrap;
-    }
-
-  .footer-right > *{
-    flex:1 50%;
-    margin-right: 1.25em ;
-  }
-
-  .box a {
-    color: #999;
-  }
-
-  .footer-bottom{
-    text-align: center;
-    color: #999;
-    padding-top:50px;
-  }
-
-  .footer-left p{
-    padding-right: 20%;
-    color: #999;
-  }
-
-  .EMAILS a{
-    background: #011c39;
-    width:40px;
-    height:40px;
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  .EMAILS a i{
-    color: #e7f2f4;
-    padding:10px 12px;
-    font-size: 20px;
-  }
-
+/* 
+==========================
+        -- ANIMATION -- 
+==========================
+*/
+  
 @keyframes drop{
   0%{
       opacity: 0;
@@ -477,7 +357,11 @@ font-weight:  500;
       transform: translateY(0px);
   }
 }
-
+/* 
+==========================
+ -- PHONE VIEW RESIZING -- 
+==========================
+*/
 @media screen and (max-width: 1024px){
   .presentation {
       flex-direction: column;
@@ -512,29 +396,4 @@ font-weight:  500;
   }
 }
 
-.bodyFormat {
-  margin-top: 2em;
-  margin-left: 6em;
-  margin-right: 6em;
-  box-shadow: 0px 0px 25px red;
-  border-radius: 30px;
-  background-color:rgba(255, 0, 0, 0.15);
-  line-height: 1.8;
-}
 
-.centerElement {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.links {
-  margin: 0 10px;
-  width: 25px;
-  height: 30%;
-  padding: 5px;
-}
-
-.links:hover {
-  color: black;
-}
