@@ -18,7 +18,9 @@ const Login = (props) => {
   
   return (
   <section className="login">
+    <h1>Login</h1>
     <div className="loginContainer">
+      <span></span>
       <label>Username</label>
       <input
         type="text"
@@ -28,6 +30,7 @@ const Login = (props) => {
         onChange={(e) => setEmail(e.target.value)}
       />
       <p className="errorMsg">{emailError}</p>
+      <span></span>
       <label>Password</label>
       <input
         type="password"
@@ -39,14 +42,14 @@ const Login = (props) => {
       <div className="btnContainer">
         {hasAccount ? (
           <>
-          <button onClick={handleLogin}>Sign In</button>
-          <p>Don't have an account? <span onClick={() => setHasAccount(!hasAccount)}>Sign Up</span></p>
+          <button class ="cta-select" onClick={handleLogin}>Sign In</button>
+          <p className="question">Don't have an account? <span className="questionLink" onClick={() => setHasAccount(!hasAccount)}>Sign Up</span></p>
           </>
 
         ) :(
         <>
-        <button onClick={handleSignup}>Sign Up</button>
-          <p>Have an account ? <span onClick={() => setHasAccount(!hasAccount)}>Sign In</span></p>
+        <button class ="cta-add" onClick={handleSignup}>Sign Up</button>
+          <p className="question">Have an account ? <span className="questionLink" onClick={() => setHasAccount(!hasAccount)}>Sign In</span></p>
         </>
         )}
       </div>

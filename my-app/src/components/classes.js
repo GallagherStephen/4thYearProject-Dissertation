@@ -8,7 +8,7 @@ class Classes extends React.Component{
       
 
       <body>
-        <img  class = "backgroundImage" src = "https://i.ibb.co/NrWkrnC/background.jpg"  />
+        
 
         <h1 class="pageHeadings">Below you can list and manage your classes</h1>
 

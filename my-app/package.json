@@ -10,7 +10,7 @@
     "bootstrap": "^4.6.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "firebase": "^8.4.2",
+    "firebase": "^8.4.3",
     "mongoose": "^5.11.17",
     "react": "^17.0.1",
     "react-bootstrap-validation": "^0.1.11",

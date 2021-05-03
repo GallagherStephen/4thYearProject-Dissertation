@@ -31,7 +31,7 @@ const Navigation = ({ handleLogout }) =>  {
         <a href="https://www.instagram.com/student.mania/" class="links"><i class="fab fa-instagram-square"></i></a>
         <a href="https://linktr.ee/Student.Mania" class="links"><i class="fas fa-link"></i></a>
         <h4 class="navbar-brand" href="/">Student-Mania</h4>
-          <Nav>
+          <Nav className="navColor">
             <Nav.Link href="/home">Home</Nav.Link>
             <Nav.Link href="/classes">classes</Nav.Link>
             <NavDropdown title="Contact Section">
@@ -50,7 +50,7 @@ const Navigation = ({ handleLogout }) =>  {
             <NavDropdown.Item href="/webcamCapture">webcamCapture</NavDropdown.Item>
             <NavDropdown.Item href="/webcam">webcam</NavDropdown.Item>
             </NavDropdown>
-            <button onClick={handleLogout}>Logout</button>
+            <button className="cta-select" onClick={handleLogout}>Logout</button>
           </Nav>
         </Navbar>
         <br/>

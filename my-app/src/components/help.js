@@ -6,7 +6,7 @@ class Help extends React.Component{
   render(){
     return(
       <body>
-          <img  class = "backgroundImage" src = "https://i.ibb.co/NrWkrnC/background.jpg"  />
+          
   <main>
     
       <h1 class ="pageHeadings" >Welcome to Student-Mania's Help Page</h1>

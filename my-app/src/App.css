@@ -1,6 +1,5 @@
 .App {
   text-align: center;
- 
   background-size: auto;
   min-height: 100vh;
 }
@@ -14,6 +13,10 @@
   color: black;
   font-size: 18px;
   text-decoration: none;
+}
+
+.navColor{
+  color: #f0f0f1;
 }
 
 .centerElement {
@@ -54,6 +57,64 @@
 
 body{
   font-family: 'Poppins' , sans-serif;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+}
+
+.login h1{
+  text-align: center;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid silver
+}
+
+.loginContainer{
+  position: relative;
+  border-bottom: 2px solid #adadad;
+  margin: 30px ;
+}
+
+.loginContainer input{
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.loginContainer label{
+  position: absolute;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+
+.question{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+  cursor: pointer;
+}
+
+.questionLink{
+  color: #2691d9;
+  cursor: pointer;
 }
 
 button{
@@ -123,7 +184,7 @@ font-weight:  500;
 .intro-text p{
   margin-top: 5px;
   font-size: 22px;
-  color: #585772;
+  color: #f0f0f1;
 }
 
 .cta{
@@ -131,9 +192,9 @@ font-weight:  500;
 }
 
 .cta-select{
-  border: 2px solid pink;
+  border: 2px solid #2691d9;
   background: transparent;
-  color: pink;
+  color: #2691d9;
   width: 150px;
   height: 50px;
   cursor: pointer;
@@ -142,7 +203,7 @@ font-weight:  500;
 
 .cta-add{
   border: none;
-  background: pink;
+  background: #2691d9;
   color: white;
   width: 150px;
   height: 50px;
@@ -162,16 +223,6 @@ font-weight:  500;
   animation: drop 1.5s ease;
 }
 
-
-.backgroundImage{
-  background-size: cover;
-  position:absolute;
-  top: 0px;
-  height: 150%;
-  width: 100%;
-  z-index: -1;
-  opacity: 0.7;
-}
 
 .contact-form{
   width : 80%;
