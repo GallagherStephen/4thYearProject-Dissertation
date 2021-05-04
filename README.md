@@ -3,7 +3,7 @@
 
 ### website domain
 
-### `www.student-mainia.com`
+### `www.student-mania.com`
 
 ### Supervisor Mark Campbell 
 
