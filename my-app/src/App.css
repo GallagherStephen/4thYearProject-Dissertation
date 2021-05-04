@@ -1,7 +1,6 @@
 .App {
   text-align: center;
-  background-size: auto;
-  min-height: auto;
+  background-size: cover;
 }
 
 button{
@@ -13,10 +12,6 @@ header{
   width:100%;
 }
 
-.logo-container,.nav-links,.cart{
-  display: flex;
-}
-
 .logo{
   font-weight: 400;
   margin:5px;
@@ -24,18 +19,7 @@ header{
 .logo-container{
   flex: 1;
 }
-
-nav{
-  flex: 1;
-}
-
-.nav-links{
-  justify-content: space-around;
-  list-style: none;
-}
-
 .nav-link{
-  flex: 1;
   color: #011c39;
   font-size: 18px;
   text-decoration: none;
@@ -125,7 +109,7 @@ body{
   font-family: 'Poppins' , sans-serif;
   background: linear-gradient(120deg,#2980b9, #8e44ad);
   height: 100vh;
-  overflow: hidden;
+  width: 205vh;
 }
 
 .login{
@@ -189,10 +173,8 @@ body{
 */
 
 .presentation{
-  display:flex;
-  width:90%;
   margin: auto;
-  min-height: 80vh;
+  min-height: 80px;
   align-items: center;
  
 }
@@ -254,75 +236,6 @@ font-weight:  500;
   font-size: 16px;
 }
 
-/* 
-============================
--- CLASSES PAGE FROM HERE -- 
-============================
-*/
-.classes{
-  width: 100px;
-  display: flex;
-  padding:100px;
-  flex-direction: row;
-  background: white;
-  }
-
-.classBox1{
-  width: 100px;
-  margin: 20px;
-  padding: 100px;
-  background: red;
-  border: 20px blue;
-  }
-.classBox2{
-  width: 100px;
-  margin: 20px;
-  padding: 100px;
-  background: blue;
-  }
-.classBox3{
-  width: 100px;
-  margin: 20px;
-  padding: 100px;
-  background: grey;
-  }
-.classBox4{
-  padding: 100px;
-  width: 100px;
-  margin: 20px;
-  background: pink;
-  }
-
-.classBox5{
-  padding: 100px;
-  width: 100px;
-  margin: 20px;
-  background: green;
-  }
-
-.classBox6{
-  padding: 100px;
-  width: 100px;
-  margin: 20px;
-  background: yellow;
-  }
-.classBox7{
-  padding: 100px;
-  width: 100px;
-  margin: 20px;
-  background: black;
-  }
-
-.pageHeadings{
-  font-family:  sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-}
- /*  used in classes page */
-.subHeadings{
-  font-family: Arial;
-  text-decoration: underline;
-}
 
 /* 
 ==========================
@@ -330,9 +243,9 @@ font-weight:  500;
 ==========================
 */
 .tweetboxes{
+  
   padding: 100px;
-  width: 100px;
-  margin: 20px;
+  
   }
 /* 
 ==========================
