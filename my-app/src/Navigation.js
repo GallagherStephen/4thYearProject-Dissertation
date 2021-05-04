@@ -26,14 +26,13 @@ const Navigation = ({ handleLogout }) =>  {
       <div className="nav">
       <Navbar className="navbar-dark navBarOpacity" sticky="top">
         <img src="https://i.ibb.co/jgTt0rK/logo.png" alt="logo" />
-        <br></br>
-        <a href="https://www.facebook.com/Student-mania-108833497918996/?ref=page_internal" class="links"><i class="fab fa-facebook-square"></i></a>
-        <a href="https://www.instagram.com/student.mania/" class="links"><i class="fab fa-instagram-square"></i></a>
-        <a href="https://linktr.ee/Student.Mania" class="links"><i class="fas fa-link"></i></a>
         <h4 class="navbar-brand" href="/">Student-Mania</h4>
+        <br></br>
+           <a href="https://www.facebook.com/Student-mania-108833497918996/?ref=page_internal" class="links"><i class="fab fa-facebook-square"></i></a>
+           <a href="https://www.instagram.com/student.mania/" class="links"><i class="fab fa-instagram-square"></i></a>
+           <a href="https://linktr.ee/Student.Mania" class="links"><i class="fas fa-link"></i></a>
           <Nav className="navColor">
             <Nav.Link href="/home">Home</Nav.Link>
-            <Nav.Link href="/classes">classes</Nav.Link>
             <NavDropdown title="Contact Section">
             <NavDropdown.Item href="/help">Help Page</NavDropdown.Item>
             <NavDropdown.Item href="/query">Query Page</NavDropdown.Item>
@@ -46,16 +45,16 @@ const Navigation = ({ handleLogout }) =>  {
             <NavDropdown.Item href="/techPage">Useful Software</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Social">
-            <NavDropdown.Item href="/chat">chat</NavDropdown.Item>
             <NavDropdown.Item href="/webcamCapture">webcamCapture</NavDropdown.Item>
             <NavDropdown.Item href="/webcam">webcam</NavDropdown.Item>
             </NavDropdown>
+            <Nav.Link href="/chat">Student-Mania</Nav.Link>
             <button className="cta-select" onClick={handleLogout}>Logout</button>
           </Nav>
         </Navbar>
         <br/>
         <Switch>
-          <Route exact path='/' component={Home}/>
+          <Route exact path='/' component={Chat}/>
           <Route exact path='/home' component={Home}/>
           <Route exact path='/classes' component={Classes}/>
           <Route exact path='/help' component={Help}/>

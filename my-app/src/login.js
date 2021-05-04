@@ -17,6 +17,54 @@ const Login = (props) => {
   } = props;
   
   return (
+    <body>
+      <main>
+      
+      <div class = "pageHeadings"> 
+      
+      <h1 class = "heading">
+      Student-Mania<br></br>
+      </h1>
+
+      <div class = "intro-text"> 
+      
+      <div class = "cover">
+      <img src = "https://i.ibb.co/wRspgzj/Login-Logo1.png" alt="laptop" border="0" alt="laptop"></img>
+      <img src = "https://i.ibb.co/M9C3qR6/Login-Logo-Laptop.png" alt="laptop" border="0" alt="laptop"></img>
+      <img src = "https://i.ibb.co/M9C3qR6/Login-Logo-Laptop.png" alt="laptop" border="0" alt="laptop"></img>
+      </div>
+     
+
+      <div class = "cover">
+      <img src = "https://i.ibb.co/wRspgzj/Login-Logo1.png" alt="laptop" border="0" alt="laptop"></img>
+      <p class="handwritting">
+      "Best Communication Application on the market"<br></br>
+       - James D.
+      </p>
+      </div>
+
+
+      <div class = "heading">
+      <h1>
+      "What Student Mania Has to Offer :"<br></br>
+      </h1>
+
+      <div class="row">
+      <div class="column">
+        <img height = "600" width = "1200" src= "chat rooms 1.png"  />
+      </div>
+      <div class="column">
+        <img height = "600" width = "1200" src= "chat rooms.png" />
+      </div>
+      <div class="column">
+        <img src="" />
+      </div>
+      </div>
+      
+      </div>
+      </div>
+      </div>
+      
   <section className="login">
     <h1>Login</h1>
     <div className="loginContainer">
@@ -55,6 +103,8 @@ const Login = (props) => {
       </div>
     </div>
   </section>
+  </main>
+  </body>
   )
 }
 
