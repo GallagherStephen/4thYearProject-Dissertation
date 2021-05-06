@@ -63,10 +63,9 @@ header{
 
 .navColor{
   width: 100%;
-    max-width: 1024px;
+  max-width: 1024px;
     margin: 0 auto;
-    
-    justify-content: space-around; 
+  justify-content: space-around; 
 }
 
 /* add notes page */

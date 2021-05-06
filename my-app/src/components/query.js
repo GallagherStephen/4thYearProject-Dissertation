@@ -74,6 +74,8 @@ class Query extends React.Component {
                       <Form.Control as="input" value={this.state.Feedback} onChange={this.handleFeedbackChange}/>
                     </Form.Group>
                     <Button variant="primary" type="submit">Add Query</Button>
+                    <br></br><br></br>
+                    <Button variant="primary" href="/forumPage">Go to Forum Page</Button>
                   </Form>
                 </div>
                <br></br>

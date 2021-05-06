@@ -2,6 +2,7 @@ import React from 'react';
 import Forums from "./forums";
 import '../App.css';
 import axios from 'axios';
+import Button from "react-bootstrap/Button";
 import { CardDeck } from 'react-bootstrap';
 
 
@@ -31,7 +32,13 @@ class ForumPage extends React.Component{
               <CardDeck>
                 <Forums  theForums={this.state.forums} ReloadDataMethod={this.ReloadDataMethod}></Forums>
               </CardDeck>
+              <Button variant="primary" href="/query">Go to Query Page to submit a question?</Button>
+              <br></br>
+              <Button variant="primary" href="/chat">Go to Chat Page to talk to everyone?</Button>
+              <br></br>
+              <Button variant="primary" href = 'https://linktr.ee/Student.Mania'>Go to our contacts page for email.</Button>
             </div>
+            
           </div>
         </div>
       )
