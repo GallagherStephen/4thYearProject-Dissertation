@@ -49,8 +49,9 @@ const Navigation = ({ handleLogout }) =>  {
             <NavDropdown.Item href="/webcam">webcam</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/chat">Student-Mania</Nav.Link>
-            <button className="cta-select" onClick={handleLogout}>Logout</button>
+            
           </Nav>
+          <button className="cta-select" onClick={handleLogout}>Logout</button>
         </Navbar>
         <br/>
         <Switch>

@@ -62,7 +62,11 @@ header{
 }
 
 .navColor{
-  color: #f0f0f1;
+  width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    
+    justify-content: space-around; 
 }
 
 /* add notes page */
