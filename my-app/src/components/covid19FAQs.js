@@ -14,12 +14,12 @@ class Home extends React.Component{
   <main>
 
 
-        <section class="presentation">
+        <section class="covidpageStyle">
                
                   <div class = "introduction">
                     
                       <div class = "intro-text">
-                       
+                      <br></br>
                       <h1>Common Questions</h1>
                       <p>
                         For more info check out HSE website : <a href="https://www2.hse.ie/coronavirus/">www2.HSE.ie</a>

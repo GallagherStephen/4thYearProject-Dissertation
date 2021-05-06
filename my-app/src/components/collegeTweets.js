@@ -13,9 +13,10 @@ class CollegeTweets extends React.Component{
 
 
   <main>
-    <h1 class="pageHeadings" ><b>Twitter Feeds</b></h1>
-    <h2 class="pageHeadings" >If You have a Query that needs help leave a comment and us or our community will help!</h2>
-  <section class="presentation" >
+  <br></br>
+    <h1 class="centerText" ><b>Twitter Feeds</b></h1>
+    <h2 class="centerTextwhite" >If You have a Query that needs help leave a comment and us or our community will help!</h2>
+    <section class="presentation" >
         
  
         <div class = "intro-text">
@@ -26,29 +27,28 @@ class CollegeTweets extends React.Component{
         
         </div>
 
-        
         <div class="tweetboxes">
-        <h2>nuigalway</h2>
+        <h3>GMIT</h3>
+        <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/GMITOfficial?ref_src=twsrc%5Etfw">Tweets by GMITOfficial</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <div class="tweetboxes">
+        <h2>NUI</h2>
         <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/nuigalway?ref_src=twsrc%5Etfw">Tweets by nuigalway</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
         <div class="tweetboxes">
-        <h3>GMITOfficial</h3>
-        <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/GMITOfficial?ref_src=twsrc%5Etfw">Tweets by GMITOfficial</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        
-        <div class="tweetboxes">
-        <h2>ucddublin</h2>
+        <h2>UCD</h2>
         <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/ucddublin?ref_src=twsrc%5Etfw">Tweets by ucddublin</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
         <div class="tweetboxes">
-        <h2>corkbeo</h2>
+        <h2>CORK</h2>
         <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/corkbeo?ref_src=twsrc%5Etfw">Tweets by corkbeo</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
         <div class="tweetboxes">
-        <h2>Limerick_ie</h2>
+        <h2>LIMERICK</h2>
         <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/Limerick_ie?ref_src=twsrc%5Etfw">Tweets by Limerick_ie</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 
@@ -58,7 +58,7 @@ class CollegeTweets extends React.Component{
         </div>
 
         <div class="tweetboxes">
-        <h4>kerrycollegemvc</h4>
+        <h4>KERRY</h4>
         <a class="twitter-timeline" data-width="800" data-height="1200" data-theme="dark" href="https://twitter.com/kerrycollegemvc?ref_src=twsrc%5Etfw">Tweets by kerrycollegemvc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
 

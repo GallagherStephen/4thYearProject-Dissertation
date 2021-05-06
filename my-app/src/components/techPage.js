@@ -11,9 +11,10 @@ class TechPage extends React.Component{
 
   <main>
 
-        <h1 class="pageHeadings" ><b>College Student Resources</b></h1>
+        <h1 class="centerText" ><b>College Student Resources</b></h1>
+        <h2 class="centerTextwhite" > Software</h2>
         
-        <section class="presentation">
+        <section class="covidpageStyle">
                
                   <div class = "introduction">
                     

@@ -25,7 +25,7 @@ const Navigation = ({ handleLogout }) =>  {
     <BrowserRouter>
       <div className="nav">
       <Navbar className="navbar-dark navBarOpacity" sticky="top">
-        <img src="https://i.ibb.co/jgTt0rK/logo.png" alt="logo" />
+        <img src="LogoWhite.png" width="90" height="70" alt="logo" />
         <h4 class="navbar-brand" href="/">Student-Mania</h4>
         <br></br>
            <a href="https://www.facebook.com/Student-mania-108833497918996/?ref=page_internal" class="links"><i class="fab fa-facebook-square"></i></a>

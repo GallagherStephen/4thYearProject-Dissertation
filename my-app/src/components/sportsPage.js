@@ -12,17 +12,16 @@ class Home extends React.Component{
 
 
   <main>
+        <h1 class="centerText" ><b>Sports</b></h1>
+        <h2 class="centerTextwhite" > Colleges</h2>
 
-        <h1 class="pageHeadings" ><b>Sports</b></h1>
-        <h2 class="pageHeadings" ></h2>
-
-        <section class="presentation">
+        <section class="covidpageStyle">
                
                   <div class = "introduction">
                     
                       <div class = "intro-text">
                        
-                      <h1>Colleges</h1>
+                      
                       <p>
                        
                       </p>

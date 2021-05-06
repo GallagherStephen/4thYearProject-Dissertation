@@ -8,24 +8,31 @@ class Help extends React.Component{
       <body>
           
   <main>
-    
-      <h1 class ="pageHeadings" >Welcome to Student-Mania's Help Page</h1>
-        <section class="presentation">
+      
+      <br></br>
+      <h1 class="centerText" >Welcome to Student-Mania's Help Page</h1>
+      <br></br>
+      <br></br>
+      <br></br> 
+        <section class="covidpageStyle">
 
                
 
                 <div class = "introduction">
 
                   <div class = "intro-text">
-                      <h1>Website Video</h1>
-                      <p>
-                       Help navigation of the website : kevin jack stephent
+                     
+                      <br></br>
+                      <br></br> 
+                      <h1 class="centerText">Website Video</h1>
+                      <p class="centerText">
+                       To help with navigation of the website :
                       </p>
                       
                   </div>
               </div>
 
-              <div>
+              <div class="centerText">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/vX-YnSQkRyk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               

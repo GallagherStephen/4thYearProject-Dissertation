@@ -183,6 +183,15 @@ body{
   align-items: center;
 }
 
+.covidpageStyle{
+  margin: auto;
+  min-height: 80px;
+  align-items: center;
+  display:flex;
+  width:90%;
+}
+
+
 .introduction{
   flex:0.5; 
 }
@@ -341,5 +350,20 @@ font-weight:  500;
     font-size: 70px;
   }
   
-  
+  .centerText {
+    text-align: center;
+  }
 
+  .leftText {
+    text-align: left;
+  }
+
+  .centerTitleHomeText {
+    text-align: center;
+    color: black;
+  }
+
+  .centerTextwhite {
+    text-align: center;
+    color: white;
+  }
