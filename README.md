@@ -31,11 +31,7 @@
 ### `GITHUB`
 ### `TRELLO`
 
+Student-Mania 
 
-### marking scheme
+StudentMania – Communication is the key right now. For our project, we wanted to develop a communication website for students to aid in online communication and learning. 
 
--
--
--
--
--
