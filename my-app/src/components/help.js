@@ -33,7 +33,7 @@ class Help extends React.Component{
               </div>
 
               <div class="centerText">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/vX-YnSQkRyk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="760" height="515" src="https://www.youtube.com/embed/rV1wWgMYujA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
               
       </section>
