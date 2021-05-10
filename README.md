@@ -19,6 +19,9 @@ The user can run the application in two different ways:
 1. By going to the url 'https://www.student-mania.com/home' and the user can create an account to access the website and its features.
 2. By cloning the repository 'https://github.com/GallagherStephen/4thYearProject-Dissertation.git' in the command prompt in an empty folder and from here you 'cd 4thYearProject-Dissertation' then next you 'cd my-app' and then 'npm start' to run the application locally. P.S. the user might have to add firebase to their machine to work with the authentication which is simply entering 'npm install firebase'.
 
+### Screencast Of the Project
+Link to the video is : https://www.youtube.com/watch?v=wLuYDjyjU3g
+
 ### Contributors 
 * Stephen Gallagher - G00314689
 * Kevin Flanagan - G00228079
