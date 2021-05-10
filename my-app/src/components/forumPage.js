@@ -13,6 +13,7 @@ class ForumPage extends React.Component{
   }
 
   componentDidMount() {
+    // This takes the info for or use with elastic beanstalk and works with the cloud to send info to the domain
       axios.get('https://api.student-mania.com/api/forums')//http://localhost:4000/api/forums
       .then((response)=>{
           this.setState({forums: response.data.forums})
@@ -29,6 +30,7 @@ class ForumPage extends React.Component{
           <h2 class="centerTextwhite" >Welcome to the Forum page, where your Querys are recieved for the community to see!!</h2>
           <div class="bodyFormat">
             <div class="card bg-dark text-white">
+              {/* Here it takes the info sent to the forums section and outputs the results into cards */}
               <CardDeck>
                 <Forums  theForums={this.state.forums} ReloadDataMethod={this.ReloadDataMethod}></Forums>
               </CardDeck>

@@ -5,7 +5,7 @@ import fire from './fire';
 import Login from './login';
 import Navbar from'./Navigation';
  
-
+// the consts for our methods throughout the file
 const App = () => {
   const [user,setUser] = useState("");
   const [email,setEmail] = useState("");
@@ -24,7 +24,7 @@ const App = () => {
     setPasswordError('');
   }
 
-
+  // method that handles the logging in to site and checks with any errors
   const handleLogin = () => {
     clearErrors();
     fire
@@ -44,6 +44,7 @@ const App = () => {
     });
   };
 
+  // method that handles the signing up to the website
   const handleSignup = () => {
     clearErrors();
     fire
@@ -62,10 +63,12 @@ const App = () => {
     });
   };
 
+  // Handles the Logout for the site when in the website
   const handleLogout = () => {
     fire.auth().signOut();
   };
-
+  
+  // method to check if the user's details are correct and if the user exists
   const authListener = () => {
     fire.auth().onAuthStateChanged((user) => {
       if (user) {

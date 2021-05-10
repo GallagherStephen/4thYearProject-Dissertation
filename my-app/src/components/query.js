@@ -60,6 +60,7 @@ class Query extends React.Component {
               <h2 class="centerTextwhite">If You have a query,leave a comment and we or our community will assist you!</h2>
               <div class="bodyFormat">
                 <div class="centerElement">
+                  {/* When submit button is clicked the handleQuerySubmit takes the info to send out*/}
                   <Form onSubmit={this.handleQuerySubmit}>
                   <Form.Group>
                       <Form.Label>Name</Form.Label>

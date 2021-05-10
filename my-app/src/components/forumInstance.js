@@ -9,6 +9,7 @@ render(){
     return(
         <div class="mx-auto justify-content-center">
             <Card className="bg-dark m-4" border="primary">
+                {/* Here is where it sends the info from query to send to other forum class */}
                 <Card.Body>             
                     <Card.Title>Query:<i><br></br>{this.props.forum.feedback}</i></Card.Title>
                     <br></br>

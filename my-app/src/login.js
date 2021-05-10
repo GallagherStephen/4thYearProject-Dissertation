@@ -65,7 +65,8 @@ const Login = (props) => {
       </div>
       </div>
       </div>
-      
+      {/* Underneath here is the first part the user comes to on our site  */}
+      {/* And here the user can create an account for future use or login with a returning account */}
   <section className="login">
     <h1>Student-Mania <br></br> Login</h1>
     <div className="loginContainer">

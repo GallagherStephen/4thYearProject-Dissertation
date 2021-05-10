@@ -32,6 +32,7 @@ class Help extends React.Component{
                   </div>
               </div>
 
+              {/* Added a video uploaded to youtube for the user to view to get an idea of the website */}
               <div class="centerText">
               <iframe width="760" height="515" src="https://www.youtube.com/embed/rV1wWgMYujA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>

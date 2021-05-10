@@ -1,5 +1,7 @@
 import firebase from 'firebase';
 
+// This code is meant to be added for the firebase api 
+// to talk to our application with id's and api keys.
 var firebaseConfig = {
     apiKey: "AIzaSyDlyMuYeY9jLV5PPPczA4GAj2LZh6NZ4Mo",
     authDomain: "student-mania-59d12.firebaseapp.com",

@@ -11,7 +11,6 @@ import CollegeTweets from './components/collegeTweets';
 import SportsPage from './components/sportsPage';
 import TechPage from './components/techPage';
 import Chat from './components/chat';
-import WebcamCapture from './components/webcamCapture';
 import Webcam from './components/webcam';
 import WebcamRoom from './components/webcamRoom';
 import './App.css';
@@ -45,8 +44,7 @@ const Navigation = ({ handleLogout }) =>  {
             <NavDropdown.Item href="/techPage">Useful Software</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Social">
-            <NavDropdown.Item href="/webcamCapture">webcamCapture</NavDropdown.Item>
-            <NavDropdown.Item href="/webcam">webcam</NavDropdown.Item>
+            <NavDropdown.Item href="/webcam">Video Chat</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/chat">Student-Mania Chat</Nav.Link>
             <button className="cta-select" onClick={handleLogout}>Logout</button>
@@ -54,7 +52,7 @@ const Navigation = ({ handleLogout }) =>  {
         </Navbar>
         <br/>
         <Switch>
-          <Route exact path='/' component={Chat}/>
+          <Route exact path='/' component={Home}/>
           <Route exact path='/home' component={Home}/>
           <Route exact path='/classes' component={Classes}/>
           <Route exact path='/help' component={Help}/>
@@ -65,7 +63,6 @@ const Navigation = ({ handleLogout }) =>  {
           <Route exact path='/sportsPage' component={SportsPage}/>
           <Route exact path='/techPage' component={TechPage}/>
           <Route exact path='/addNotes' component={AddNotes}/>
-          <Route exact path='/webcamCapture' component={WebcamCapture}/>
           <Route exact path='/chat' component={Chat}/>
           <Route exact path='/webcam' component={WebcamRoom}/>
           <Route path='/room/:roomID' component={Webcam}/>

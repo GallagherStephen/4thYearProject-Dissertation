@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import io from "socket.io-client";
 
+// the consts for the different methods for the code 
 const Webcam = (props) => {
     const userVideo = useRef();
     const partnerVideo = useRef();
@@ -9,6 +10,8 @@ const Webcam = (props) => {
     const otherUser = useRef();
     const userStream = useRef();
 
+    // Here is what tell the application to firstly use the audio and video if available to use for the website
+    // Also has the sockets for joining the rooms for the different peers to allow more into the call then one
     useEffect(() => {
         navigator.mediaDevices.getUserMedia({ audio: true, video: true }).then(stream => {
             userVideo.current.srcObject = stream;
@@ -35,11 +38,13 @@ const Webcam = (props) => {
 
     }, []);
 
+    // method for calling the user from one to the other
     function callUser(userID) {
         peerRef.current = createPeer(userID);
         userStream.current.getTracks().forEach(track => peerRef.current.addTrack(track, userStream.current));
     }
 
+    // Creates the user for the peer to peer connection
     function createPeer(userID) {
         const peer = new RTCPeerConnection({
             iceServers: [
@@ -61,6 +66,7 @@ const Webcam = (props) => {
         return peer;
     }
 
+    // Handles the connection to combine the two users together for the call
     function handleNegotiationNeededEvent(userID) {
         peerRef.current.createOffer().then(offer => {
             return peerRef.current.setLocalDescription(offer);
@@ -74,6 +80,7 @@ const Webcam = (props) => {
         }).catch(e => console.log(e));
     }
 
+    // Method used for when receiving a call and the steps required for this.
     function handleRecieveCall(incoming) {
         peerRef.current = createPeer();
         const desc = new RTCSessionDescription(incoming.sdp);
@@ -93,6 +100,7 @@ const Webcam = (props) => {
         })
     }
 
+    // Method for when the user answers the call from their peer
     function handleAnswer(message) {
         const desc = new RTCSessionDescription(message.sdp);
         peerRef.current.setRemoteDescription(desc).catch(e => console.log(e));
