@@ -1,5 +1,6 @@
 # 4th Year Project 
 ## Student-Mania - Platform for Students
+![Logo](https://gyazo.com/6ca43c526a168cf72d2e23ba7f58cc14.png) <br>
 This repository contains the final year project for Applied Project and Minor Dissertation for Stephen Gallagher, Kevin Flanagan and Jack Haugh. For our project, We created a student-aimed application that intergrated WebRTC for video chat, cloud based application deployed to a domain online using Amazon's web services (AWS) Amplify and cloud based server on MongoDb to save information to it and it uses AWS Elastic Beanstalk. We also intergrated a chat system and authentication into the website and our goal was to make it user friendly for students to use.
 
 ### Contents of Repository
